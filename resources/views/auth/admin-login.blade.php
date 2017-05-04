@@ -3,13 +3,13 @@
 @section('content')
 <div class="container">
     <div class="row">
-            <center><img src="http://localhost:8080/Vendor%20Project/public/images/HKR.JPG" style="height: 160px;
+            <center><img src="{{asset('images/HKR.JPG')}}" style="height: 160px;
     width: 100px;">     </center> 
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">ADMIN Login</div>
                 <div class="panel-body">
-                    
+                <center><span style="color:red">{{Session::get('fails')}}</span><center>
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('admin.login.submit') }}">
                         {{ csrf_field() }}
 

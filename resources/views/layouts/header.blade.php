@@ -36,8 +36,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vendor Master <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="./add_vender">Add Vendor</a></li>                         
-                                        <li><a href="#">Edit Vendor</a></li>
-                                        <li><a href="#">View Vendor</a></li>
+                                        <li><a href="./vender">View Vendor</a></li>
                                     </ul>
                                 </li>
 								<li>

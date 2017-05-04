@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/add_vender', 'AdminController@show_vender');
+Route::get('/add_vender', 'AdminController@addVender');
+Route::post('/add_vender', 'AdminController@postVender')->name('add.vendor');
+Route::get('/edit-vendor/{id}', 'AdminController@editVendor');
 
+Route::get('/vender', 'AdminController@showVender');
+Route::get('/vendor-list', 'AdminController@getVendorTable')->name('show-vendor-table');
  
 
 Auth::routes();
